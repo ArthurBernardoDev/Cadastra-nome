@@ -9,9 +9,23 @@
 </head>
 
 <body>
-  <input type="text" id="name" [(ngModel)]="name" placeholder="Digite seu nome">
-  <button (click)="postData()">Enviar</button>
+  <header class="header">
+    <span>Cadastrando nome</span>
+  </header>
 
+  <div class="inputs">
+    <h2>Insira seu nome</h2>
+    <input type="text" id="name" [(ngModel)]="name" placeholder="Digite seu nome">
+    <button class="button" (click)="postData()">Enviar</button>
+  </div>
+
+  <footer class="footer">
+    <span>Desenvolvido por
+      <a href="https://github.com/ArthurBernardoDev" class="github">
+        ArthurBernardoDev
+      </a>
+    </span>
+  </footer>
 </body>
 
 </html>
